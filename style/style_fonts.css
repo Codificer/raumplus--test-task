@@ -21,13 +21,13 @@
 }
 
 ._font_bold{
-    font-family: IBMPlexSans;
+    font-family: IBMPlexSansBold;
 }
 ._font_semibold{
-    font-family: IBMPlexSans;
+    font-family: IBMPlexSansSemiBold;
 }
 ._font_tiny{
-    font-family: IBMPlexSans;
+    font-family: IBMPlexSansLight;
 }
 ._font_normal{
     font-family: IBMPlexSans;
