@@ -8,6 +8,7 @@
     text-decoration: none;
     width:270px;
     height:76px;
+    background-color: #FF3B3D;
     background-color: var(--fuschia-color);
     padding:0;
     cursor:pointer;
@@ -15,6 +16,7 @@
 .button_rb_black{
     width: 68px;
     height: 100%;
+    background: #0E0A19;
     background: var(--void-color);
     position: relative;
 }

@@ -67,22 +67,28 @@
 }
 
 ._font_color_void{
+    color:#0E0A19;
     color:var(--void-color);
 }
 ._font_color_jevel{
+    color:#312F2F;
     color:var(--jevel-color);
 }
 ._font_color_fuschia{
+    color:#FF3B3D;
     color:var(--fuschia-color);
 }
 ._font_color_grey{
+    color:#C4C4C4;
     color:var(--grey-text-color);
 }
 ._font_color_lightgrey{
+    color:#AA9FA1;
     color:var(--lightgrey-color);
 }
 
 ._font_color_white{
+    color:#fff;
     color:var(--white-color);
 }
 
