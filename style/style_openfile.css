@@ -1,0 +1,20 @@
+.button_rb_arrow{
+    top: 29px;
+    left: 15px;
+    position: absolute;
+}
+.button_redblack{
+    border: none;
+    text-decoration: none;
+    width:270px;
+    height:76px;
+    background-color: var(--fuschia-color);
+    padding:0;
+    cursor:pointer;
+}
+.button_rb_black{
+    width: 68px;
+    height: 100%;
+    background: var(--void-color);
+    position: relative;
+}

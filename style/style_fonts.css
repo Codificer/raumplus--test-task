@@ -1,0 +1,101 @@
+@font-face {
+	font-family: IBMPlexSans;
+	src: url('../fonts/IBMPlexSans-Regular.ttf'); 
+}
+@font-face {
+	font-family: IBMPlexSansBold;
+	src: url('../fonts/IBMPlexSans-Bold.ttf'); 
+}
+@font-face {
+	font-family: IBMPlexSansSemiBold;
+	src: url('../fonts/IBMPlexSans-SemiBold.ttf'); 
+}
+@font-face {
+	font-family: IBMPlexSansLight;
+	src: url('../fonts/IBMPlexSans-Light.ttf'); 
+}
+
+@font-face {
+	font-family: IBMPlexMono;
+	src: url('../fonts/Mono.ttf'); 
+}
+
+._font_bold{
+    font-family: IBMPlexSans;
+}
+._font_semibold{
+    font-family: IBMPlexSans;
+}
+._font_tiny{
+    font-family: IBMPlexSans;
+}
+._font_normal{
+    font-family: IBMPlexSans;
+}
+._font_mono{
+    font-family: IBMPlexMono;
+}
+
+
+._fontsize_xl{
+    font-size: 72px;
+    line-height: 83px;
+}
+._fontsize_l{
+    font-size: 48px;
+    line-height: 50px;
+}
+._fontsize_m{
+    font-size: 24px;
+    line-height: 25px;
+}
+._fontsize_s{
+    font-size: 16px;    
+    line-height: 21px;
+}
+._fontsize_s_18{
+    font-size: 18px;    
+    line-height: 19px;
+}
+._fontsize_xs{
+    font-size: 12px;
+    line-height: 12px;
+}
+._fontsize_xs_14{
+    font-size: 14px;
+    line-height: 15px;
+}
+
+._font_color_void{
+    color:var(--void-color);
+}
+._font_color_jevel{
+    color:var(--jevel-color);
+}
+._font_color_fuschia{
+    color:var(--fuschia-color);
+}
+._font_color_grey{
+    color:var(--grey-text-color);
+}
+._font_color_lightgrey{
+    color:var(--lightgrey-color);
+}
+
+._font_color_white{
+    color:var(--white-color);
+}
+
+.red_vector{
+    width:57px;
+    height:22px;
+}
+
+.white_small_vector{
+    width:26px;
+    height:auto;
+}
+.vector_little{
+    width:14px;
+    height:auto;
+}

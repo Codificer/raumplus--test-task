@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style/style_define.css?v<?php echo time(); ?>">
+    <link rel="stylesheet" href="style/style_fonts.css?v<?php echo time(); ?>">
+    <link rel="stylesheet" href="style/style_button.css?v<?php echo time(); ?>">
+    <link rel="stylesheet" href="style/style_openfile.css?v<?php echo time(); ?>">
+    <link rel="stylesheet" href="style/style_slider.css?v<?php echo time(); ?>">
+    <link rel="stylesheet" href="style/style_popup.css?v<?php echo time(); ?>">
+    <link rel="stylesheet" href="style/style.css?v<?php echo time(); ?>">
+    <script type="text/javascript" src="./script/slider.js"></script>
+
+</head>
+<body onload="new Slider('slider');">
+    <div class="div_top">
+        <div>
+            <div class="div_flex div_flex_dir_row _flex_justify_between"><!--Шапка сайта-->
+                <div class="_font_color_void _fontsize_xs_14 _font_mono div_margin_topbot_auto">
+                    Дизайн. <br>
+                    Отделка.<br>
+                    Мебель
+                    <img src="./img/Vector.svg" class="red_vector vector_little">
+                </div>
+                <div class="div_flex div_flex_dir_row">
+                    <div class="_fontsize_xs _font_bold div_flex div_flex_dir_row _flex_justify_center _flex_align_center" >
+                        <div><img src="./img/path.svg" class="padding_right_10px"></div>
+                        <div>г. Челябинск, ул. Сони Кривой, д. 83</div>
+                    </div>
+                    <div class="_fontsize_xs div_jevel div_callus div_flex div_flex_dir_col _flex_justify_center _flex_align_center">
+                        <div class="_font_tiny">Позвонить нам:</div>
+                        <div class="_font_semibold"><a href="callto:+73512356594" class="a_callto">+7 (351) 235-65-94</a></div>
+                    </div>
+                    <div class="div_fuschia div_menu_box div_flex_dir_row _flex_justify_center _flex_align_center">
+                        <div class="div_menu_padding">
+                            <img src="./img/menu-1.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div_flex div_flex_dir_row _flex_justify_between div_margin_top_s"> <!-- слайдер здесь-->
+                <div class="div_with_img_box div_with_img_box_margin_r">
+                    <img src="./img/1 1.png" class="img_with_starkbox_little div_with_img_box_img">
+                    <div class="div_starkbox div_starkbox_img div_starkbox_img_top_little"></div>
+                </div>
+                <div>
+                    <div class="_fontsize_l _font_semibold">
+                        Жизнь<br>
+                        полна<br>
+                        идей 
+                        <img src="./img/Vector.svg" class="red_vector">
+                    </div>
+                    <div class="_fontsize_l _font_semibold _font_color_fuschia div_margin_top_s">   
+                        как<br>
+                        и наша<br>
+                        мебель
+                    </div>
+                    <a href="#zayavka" class="button_a"><div class="button_grey div_jevel button_margin_left _font_bold _fontsize_s button_margin_top_45" name="recall">
+                        <div>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</div>
+                    </div></a>
+                </div>
+                <!--div><img src="./img/заглушка_слайдер.svg" style="margin:auto"></div-->
+            </div>
+        </div>
+        <div class="div_margin_top">            
+            <div class="div_flex div_flex_dir_row _flex_justify_between"><!-- анкета для расчета-->
+                <div>
+                    <div>
+                        <div class="_fontsize_l _font_semibold div_margin_bottom_m_40">
+                            Расчитаем<br>
+                            стоимость<br>
+                            за 30 минут
+                            <img src="./img/Vector.svg" class="red_vector">
+                        </div>
+                    </div>
+                    <form onsubmit="" class="div_flex div_flex_dir_row">
+                        <div class="form_margin_right">
+                            <div class="div_flex div_flex_dir_col_reverse">
+                                <input type="text" class="form_input _fontsize_xs_14 _font_color_void _font_normal div_margin_bottom_s_20" name="name">
+                                <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_grey _font_normal">Введите ваше имя</div>
+                            </div>
+                            
+                            <div class="div_flex div_flex_dir_col_reverse">
+                                <input type="tel" class="form_input _fontsize_xs_14 _font_color_void _font_normal" name="phone">
+                                <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_grey _font_normal">Введите ваш номер телефона</div>
+                            </div>
+                                
+                            <div class="button_margin_top_60">
+                                <input type="checkbox" class="form_checkbox form_checkbox1" name="check_agree" id="check_agree" value="yes">
+                                <label for="check_agree" class="_fontsize_xs_14 _font_color_grey _font_normal">
+                                    Я согласен с условиями обработки<br>и исползования персональных данных
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            
+                            <div class="div_flex div_flex_dir_col_reverse">
+                                <input type="email" class="form_input _fontsize_xs_14 _font_color_void _font_normal" name="email">
+                                <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_grey _font_normal">Введите ваш e mail</div>
+                            </div>
+                            <button type="button" onclick="importData()" class="button_redblack div_flex _font_bold _fontsize_s button_margin_top_60" name="loadfile" >
+                                <div class="button_rb_black"><img src="./img/arrow.svg" class="arrow_bot button_rb_arrow"></div>
+                                <div class="_fontsize_xs_14 _font_normal div_margin_auto _font_color_white">ПРИКРЕПИТЬ ФАЙЛЫ</div>
+                            </button>
+                            <button type="submit" class="button_grey div_jevel _font_bold _fontsize_s button_margin_top_60" name="send_form" >ПОЛУЧИТЬ РАССЧЕТ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="div_with_img_box">
+                    <div class="div_fuschia_img "><img src="./img/A4 Paper PSD MockUp 23.png" class=""></div>
+                    <div class="div_fuschia div_fuschia_img_box _font_color_white _font_semibold div_flex div_flex_dir_col _flex_justify_end"><!--красный блок-->
+                        <div class="_fontsize_s_18 div_margin_bottom_s div_padding_left_55">
+                            Вы <br>
+                            получите <br>
+                            примерный <br>
+                            расчет                          
+                            <img src="./img/Vector-white.svg" class="white_small_vector">
+                        </div>
+                        <div class="_fontsize_xs _font_semibold div_padding_left_55 div_padding_bot_55">
+                            Оператор перезвонит вам для более<br>подробной консультации.
+                            <br><br>Мы не рассылаем спам, только<br>персональные предложения
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div_margin_top">
+            <div class="div_flex div_flex_dir_row _flex_justify_between">
+                <div class="div_margin_bottom_m_45">
+                    <div>
+                        <div class="_fontsize_l _font_semibold">
+                            Посмотрите<br>
+                            на наши<br>
+                            проекты 
+                            <img src="./img/Vector.svg" class="red_vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="div_flex div_flex_dir_row _flex_align_end"><!-- Стрелки -->
+                    <div class="button_arrow_red" id="arr_slider_left"><img src="./img/arrow.svg" class="arrow_left button_r_arrow" ></div>
+                    <div class="button_arrow_red" id="arr_slider_right"><img src="./img/arrow.svg" class="arrow_right button_r_arrow" ></div>
+                </div>
+            </div>
+            <div class="slider" id='slider'><!--Слайдер с картинками и текстом-->
+                <div class="slider-hider">
+                    <div class="slider-list">
+                        <div class="slider-element div_margin_right_s_30">
+                            <div class="div_margin_bottom_m_40 div_shadow slider-image">
+                                <img src="./img/3 1.png">
+                            </div>
+                            <div class="_font_semibold _font_color_void _fontsize_m div_margin_bottom_xs div_padding_left_30">
+                                Кабинеты<br>
+                                и библиотеки
+                            </div>
+                            <div class="_fontsize_xs _font_color_grey _font_normal div_padding_left_30">Для жилых и общественных помещений</div>
+                        </div>
+                        <div class="slider-element div_margin_right_s_30">
+                            <div class="div_margin_bottom_m_40 div_shadow slider-image" >
+                                <img src="./img/3 2.png" >
+                            </div>
+                            <div class="_font_semibold _font_color_void _fontsize_m div_margin_bottom_xs div_padding_left_30">
+                                Мебель<br>
+                                для кухни
+                            </div>
+                            <div class="_fontsize_xs _font_color_grey _font_normal div_padding_left_30">Современные комплектующие</div>
+                        </div>
+                        <div class="slider-element div_margin_right_s_30">
+                            <div class="div_margin_bottom_m_40 div_shadow slider-image">
+                                <img src="./img/3 3.png">
+                            </div>
+                            <div class="_font_semibold _font_color_void _fontsize_m div_margin_bottom_xs div_padding_left_30">
+                                Детские и подростковые<br>комнаты
+                            </div>
+                            <div class="_fontsize_xs _font_color_grey _font_normal div_padding_left_30">Из экологически чистых материалов</div>
+                        </div>
+                        <div class="slider-element div_margin_right_s_30">
+                            <div class="div_margin_bottom_m_40 div_shadow slider-image">
+                                <img src="./img/3 4.png">
+                            </div>
+                            <div class="_font_semibold _font_color_void _fontsize_m div_margin_bottom_xs div_padding_left_30">
+                                Кабинеты<br>
+                                и библиотеки 2
+                            </div>
+                            <div class="_fontsize_xs _font_color_grey _font_normal div_padding_left_30">Для жилых и общественных помещений2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div_margin_top">  
+            <div class="div_flex div_flex_dir_row _flex_justify_start">
+                <div class="div_text_width_270 div_margin_right_xl_130 div_flex div_flex_dir_col _flex_justify_start"> <!--1st column-->
+                    <div class="_fontsize_l _font_semibold div_margin_bottom_m_50 ">
+                        Почему<br>
+                        выбирают<br>
+                        нас 
+                        <img src="./img/Vector.svg" class="red_vector">
+                    </div>
+                    <div class="div_margin_bottom_l_80 div_rel_left">                         
+                        <img src="./img/4 2.png" class="div_shadow">
+                    </div>  
+                    <div>
+                        <div class="_font_semibold _fontsize_s_18 div_margin_bottom_xs">
+                            С вами <br>
+                            будет <br>
+                            работать <br>
+                            Команда  <br>
+                            профессионалов
+                        </div>
+                        <div class="_font_normal _font_color_grey _fontsize_xs div_margin_bottom_m_40">
+                            Все, кто работают над<br>
+                            изготовлением Вашей мебели —<br>
+                            дизайнер- консультант, мастер,<br>
+                            технолог - профессионалы в своем<br> деле
+                        </div>
+                        <div class="_fontsize_xl _font_tiny">
+                            -%
+                            <img src="./img/Vector.svg" class="red_vector">
+                        </div>
+                        <div class="_font_semibold _fontsize_s_18">не экономим<br>на деталях</div>
+                    </div> 
+                </div>
+                <div class="div_text_width_270 div_margin_right_xl_130 div_flex div_flex_dir_col _flex_justify_start"><!--2nd column-->                    
+                    <div class=" div_margin_bottom_l_60 div_padding_top_40 div_rel_left">
+                        <img src="./img/4 1.png" class="div_shadow">
+                    </div>          
+                    <div> 
+                        <div class="_font_semibold _fontsize_s_18">
+                            У нас<br>
+                            есть<br>
+                            собственное<br>
+                            производство 
+                        </div>
+                        <div class="_font_normal _font_color_grey _fontsize_xs div_margin_top_xs_25 div_margin_bottom_l_70">
+                            Наше производство<br>
+                            с современным оборудованием<br>
+                            находится в городе Челябинске.
+                        </div>                   
+                    </div>
+                    <div class="div_rel_right">
+                        <img src="./img/4 4.png" class="div_shadow">
+                    </div>
+                </div>
+                <div class="div_text_width_270 div_flex div_flex_dir_col div_margin_left_auto _flex_justify_start"><!--3d column--> 
+
+                    <div class="div_margin_bottom_l_70 div_padding_top_140">
+                        <div class="_font_semibold _fontsize_s_18 div_margin_bottom_xs">
+                            Raumplus<br>
+                            единственный<br>
+                            бренд салон<br>
+                            Челябинска 
+                        </div>
+                        <div class="_font_normal _font_color_grey _fontsize_xs div_margin_bottom_xl_130">
+                            Это гарантия качества, <br>
+                            а главное — подлинности <br>
+                            Вашего изделия
+                        </div>
+                        <div class="_fontsize_xl _font_tiny">
+                            14
+                            <img src="./img/Vector.svg" class="red_vector">
+                        </div>
+                        <div class="_font_semibold _fontsize_s_18">лет опыта</div>
+                    </div>             
+                    <div class="div_rel_right">
+                        <img src="./img/4 3.png" class="div_shadow">
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <div class="div_margin_top">
+            <div class="div_flex div_flex_dir_row _flex_justify_between _flex_wrap_wrap _font_color_void">
+                <div class="div_margin_bottom_s_20 div_border_width_370">
+                    <div>
+                        <div class="_fontsize_l _font_semibold">
+                            Качество<br>
+                            проверенное<br>
+                            временем 
+                            <img src="./img/Vector.svg" class="red_vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="div_margin_bottom_s_20 div_border div_border_width_270 div_shadow div_with_img_box">
+                    <div class="_font_semibold _fontsize_m">
+                        Как<br>
+                        заказать
+                    </div>
+                    <div class="_fontsize_xs _font_normal _font_color_jevel">
+                        Заказать нашу мебель очень<br>
+                        просто, читайте подробно<br>
+                        в этом разделе
+                    </div>
+                    <div class="">
+                        <img src="./img/5 1.png" class="div_border_img">
+                    </div>
+                </div>
+                <div class="div_margin_bottom_s_20 div_border div_border_width_470 div_shadow div_with_img_box">
+                    <div class="_font_semibold _fontsize_m">
+                        Акции<br>
+                        и скидки
+                    </div>
+                    <div class="_fontsize_xs _font_normal _font_color_jevel">
+                        Мы любим радовать своих<br>
+                        клиентов выгодными<br>
+                        предложениями
+                    </div>
+                    <div>
+                        <img src="./img/5 2.png" class="div_border_img">
+                    </div>
+                </div>
+                <div class="div_margin_bottom_s_20 div_border div_border_width_270 div_shadow div_with_img_box">
+                    <div class="_font_semibold _fontsize_m">
+                        Отзывы
+                    </div>
+                    <div class="_fontsize_xs _font_normal _font_color_jevel">
+                        Отзывы о нашей работе<br>
+                        находятся в этом разделе
+                    </div>
+                    <div>
+                        <img src="./img/5 3.png" class="div_border_img">
+                    </div>
+                </div>
+                <div class="div_margin_bottom_s_20 div_border div_border_width_470 div_shadow div_with_img_box">
+                    <div class="_font_semibold _fontsize_m">
+                        Статьи
+                    </div>
+                    <div class="_fontsize_xs _font_normal _font_color_jevel">
+                        Интересная информация<br>
+                        о новостях в мире мебели <br>
+                        и нашей компании
+                    </div>
+                    <div>
+                        <img src="./img/5 4.png" class="div_border_img">
+                    </div>
+                </div>
+                <div class="div_margin_bottom_s_20 div_border_width_370_pad">
+                    <div class="_font_normal _font_color_grey _fontsize_xs">
+                        <div class="_font_semibold _fontsize_s_18 _font_color_void div_margin_bottom_xs_15">
+                            Мебель<br>
+                            призвана<br> 
+                            украшать <br>
+                            интерьер
+                        </div>
+                        <div class="div_margin_bottom_xs_15"> 
+                            Делать дом функциональным,<br>
+                            а проживание в нем - комфортным. 
+                         </div>
+                         <div>  
+                            Она должна радовать Вас долгие<br>
+                            годы,а не несколько недель или<br> месяцев. Поэтому выбирайте лучшее<br> для себя и для своего дома!
+                        </div>
+                    </div>
+                    <a href="#zayavka" class="button_a"><div class="button_grey _font_bold _fontsize_s div_jevel div_margin_top_s_60"><div>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</div></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="div_margin_top">
+            <div class="div_flex div_flex_dir_row _flex_justify_start"> 
+                <div class="div_with_img_box">
+                    <img src="./img/6 1.png" class="img_with_starkbox_big div_with_img_box_img">
+                    <div class="div_starkbox div_starkbox_img div_starkbox_img_top_large div_with_img_box_margin_r " ></div>
+                </div>
+                <div>
+                    <div class="_fontsize_l _font_semibold">
+                        Приходите<br>
+                        в гости<br>
+                        онлайн
+                        <img src="./img/Vector.svg" class="red_vector">
+                    </div>
+                    <div class="_fontsize_l _font_semibold _font_color_fuschia div_margin_top_s">
+                        лучше<br>
+                        один раз<br>
+                        увидеть
+                    </div>
+                    <a href="https://vk.com" class="button_a"><div class="button_grey button__flexy _font_bold _fontsize_s div_jevel div_margin_top_s_60">
+                        <img src="./img/3d.svg" class="padding_right_10px"><div>3D ТУР</div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div class="div_margin_top">
+            <div class="div_flex div_flex_dir_row _flex_justify_between">
+                <div class="div_flex div_flex_dir_col">
+                    <div class="div_flex div_flex_dir_row div_margin_bottom_m_30">
+                        <div class="div_text_270_220 div_margin_right_s_30 div_hover div_shadow">
+                            <div class="_font_semibold _fontsize_m div_margin_bottom_m_40 _font_color_jevel">
+                                Быстро
+                            </div>
+                            <div class="_font_normal _fontsize_xs _font_color_fuschia">
+                                Все изменения<br>
+                                в калькуляторе<br>
+                                пересчитываются<br>
+                                в режиме онлайн
+                            </div>
+                        </div>
+                        <div class="div_text_270_220 div_margin_right_s_30 div_hover div_shadow">
+                            <div class="_font_semibold _fontsize_m div_margin_bottom_m_40 _font_color_jevel">
+                                Наполнение
+                            </div>
+                            <div class="_font_normal _fontsize_xs _font_color_fuschia">
+                                Масса вариантов<br>
+                                для вашей фантазии, <br>
+                                в нашем конструкторе<br>мебели
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_flex div_flex_dir_row ">
+                        <div class="div_text_270_220 div_margin_right_s_30 div_hover div_shadow">
+                            <div class="_font_semibold _fontsize_m div_margin_bottom_m_40 _font_color_jevel">
+                                Просто
+                            </div>
+                            <div class="_font_normal _fontsize_xs _font_color_fuschia">
+                                Вам нужно только ввести<br>
+                                данные своего проекта,<br>
+                                конструктор сам все<br>посчитает
+                            </div>
+                        </div>
+                        <div class="div_with_img_box div_shadow"><!-- рисунок -->
+                            <div  class="div_img_hover_270_220"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_margin_right_l_100">
+                    <div class="_fontsize_l _font_bold div_margin_bottom_s_20">
+                        Посчитай<br>
+                        свою<br>
+                        идею 
+                        <img src="./img/Vector.svg" class="red_vector">
+                    </div>
+                    <div class="_fontsize_s_18 _font_semibold _font_color_void">
+                        Каждый проект требует<br>
+                        индивидуального подхода <br>
+                        создайте свой в нашем<br>
+                        конструторе
+                    </div>
+                    <a href="https://vk.com" class="button_a"><div class="button_grey _font_bold _fontsize_s div_jevel div_margin_top_s_60">
+                        <div>КОНСТРУКТОР</div>
+                    </div></a>
+                </div>        
+            </div>
+        </div>
+        <div class="div_margin_top div_with_img_box">
+            <div class="div_starkbox div_starkbox_form"></div>
+            <div class="div_flex div_flex_dir_row _flex_justify_between div_form_rel">
+                <div>
+                    <div class="div_flex div_flex_dir_row">
+                        <div>
+                            <div class="_fontsize_l _font_semibold">
+                                Закажи<br>
+                                бесплатный<br>
+                                расчет 
+                                <img src="./img/Vector.svg" class="red_vector">
+                            </div>
+                            <div class="_fontsize_l _font_semibold _font_color_fuschia div_margin_top_m_100">   
+                                и получи<br>
+                                скидку
+                            </div>
+                        </div>
+                        <div class="div_with_img_box"> 
+                            <div class="div_svg_55 "><!--img src="./img/5pr.png"-->
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="222">
+                                <text x="0" y="211" font-size="299px" font-family="IBMPlexSansSemiBold" fill="var(--fuschia-color)" stroke="var(--white-color)" stroke-width="1" > 5 </text>
+                                <text x="6" y="218" font-size="309px" font-family="IBMPlexSansSemiBold" fill="var(--fuschia-color)" stroke="var(--white-color)" stroke-width="1" > 5 </text>
+                                <text x="200" y="218" font-size="89px" font-family="IBMPlexSansSemiBold" fill="var(--fuschia-color)" stroke="var(--white-color)" stroke-width="1" > % </text>
+                                </svg>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form on submit="" class="">
+                    <div class="_font_color_void _fontsize_s_18 _font_semibold">
+                        Заполните форму и наши менеджеры<br>сделают вам расчет и перезвонят
+                    </div>
+                    <div class="div_flex div_flex_dir_row div_margin_top_xs">
+                        <div class="form_margin_right">
+                            
+                            <div class="div_flex div_flex_dir_col_reverse">
+                                <input type="text" class="form_input _fontsize_xs_14 _font_color_void _font_normal div_margin_bottom_s_20" name="name">
+                                <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_void _font_normal">Введите ваше имя</div>
+                            </div>
+                            
+                            <div class="div_flex div_flex_dir_col_reverse">
+                                <input type="tel" class="form_input _fontsize_xs_14 _font_color_void _font_normal" name="phone">
+                                <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_void _font_normal">Введите ваш номер телефона</div>
+                            </div>
+                            <div class="button_margin_top_60">
+                                <input type="checkbox" class="form_checkbox form_checkbox2" name="check_agree1" id="check_agree1" value="yes">
+                                <label for="check_agree1" class="_fontsize_xs_14 _font_color_void _font_normal">
+                                    Я согласен с условиями обработки<br>и исползования персональных данных
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            
+                            <div class="div_flex div_flex_dir_col_reverse">
+                                <input type="email" class="form_input _fontsize_xs_14 _font_color_void _font_normal" name="email">
+                                <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_void _font_normal">Введите ваш e mail</div>
+                            </div>
+                            <button type="button" onclick="importData()" class="button_redblack div_flex _font_bold _fontsize_s button_margin_top_60" name="loadfile">
+                                <div class="button_rb_black"><img src="./img/arrow.svg" class="arrow_bot button_rb_arrow"></div>
+                                <div class="_fontsize_xs_14 _font_normal div_margin_auto _font_color_white">ПРИКРЕПИТЬ ФАЙЛЫ</div>
+                            </button>
+                            <button type="submit" class="button_grey div_jevel _font_bold _fontsize_s button_margin_top_60" name="send_form">ПОЛУЧИТЬ РАССЧЕТ</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="div_margin_top_xs"><!--Подвал-->
+            <div class="_font_color_lightgrey _fontsize_xs div_flex _flex_justify_between "><!--верх с ссылками-->
+                <div class="div_flex">
+                    <div class="div_margin_right_s_30 div_170_145">
+                        <div class="_font_color_void _fontsize_xs_14 _font_semibold div_margin_bottom_xs"><a href="#" class="div_a_color">О компании</a></div>
+                        <div>
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Raumplus</a></li>
+                                <li><a href="#">Политика в области качества</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div_margin_right_s_30 div_170_145">
+                        <div class="_font_color_void _fontsize_xs_14 _font_semibold div_margin_bottom_xs"><a href="#" class="div_a_color">Дизайн, ремонт, отделка</a></div>
+                        <div>
+                            <ul>
+                                <li><a href="#">Дизайн интерьера</a></li>
+                                <li><a href="#">Трёхмерная визуализация</a></li>
+                                <li><a href="#">Авторский надзор</a></li>
+                                <li><a href="#">Ремонт под ключ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div_margin_right_s_30 div_170_145">
+                        <div class="_font_color_void _fontsize_xs_14 _font_semibold div_margin_bottom_xs"><a href="#" class="div_a_color">Клиентам</a></div>
+                        <div>
+                            <ul>
+                                <li><a href="#">Акции и скидки</a></li>
+                                <li><a href="#">Как заказать</a></li>
+                                <li><a href="#">Способы оплаты</a></li>
+                                <li><a href="#">Доставка и монтаж</a></li>
+                                <li><a href="#">Видео</a></li>
+                                <li><a href="#">Политика обработки<br>персональных данных</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div_margin_right_s_30 div_170_145">                    
+                        <div class="_font_color_void _fontsize_xs_14 _font_semibold div_margin_bottom_xs"><a href="#" class="div_a_color">Портфолио</a></div>
+                        <div>
+                            <ul>
+                                <li><a href="#">Шкафы - купе</a></li>
+                                <li><a href="#">Гардеробные комнаты</a></li>
+                                <li><a href="#">Межеомнатные двери и перегородки</a></li>
+                                <li><a href="#">Кабинеты и библиотеки</a></li>
+                                <li><a href="#">Мебель для кухни</a></li>
+                                <li><a href="#">Детские и подростковые комнаты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div_margin_right_s_30">
+                        <div class="_font_color_void _fontsize_xs_14 _font_semibold div_margin_bottom_xs"><a href="#" class="div_a_color">Дизайнерам и архитекторам</a></div>
+                        <div class="_font_color_void _fontsize_xs_14 _font_semibold div_margin_bottom_xs"><a href="#" class="div_a_color">Контакты</a></div>
+                        <div>
+                            <ul>
+                                <li>г. Челябинск,</li>
+                                <li>ул. Сони Кривой, д. 83</li>
+                                <li><a href="callto:+73512356594">+7 (351) 235-65-94</a></li>
+                                <li><a href="mailto:alfakomfort@mail.ru">alfakomfort@mail.ru</a></li>
+                                <li><a href="#">Вконтакте</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="_font_color_void _fontsize_xs_14 _font_mono">
+                    Дизайн. <br>
+                    Отделка.<br>
+                    Мебель
+                    <img src="./img/Vector.svg" class="red_vector vector_little">
+                </div>
+            </div>
+            <div class="div_flex _flex_justify_between div_margin_top_xs div_margin_bottom_s"><!--низ с логотипом рыббла-->
+                <div class="_fontsize_xs _font_color_jevel ">© 2019 Бренд-салон raumplus, производственная компания D.O.M.</div>
+                <div><img src="./img/Ribbla_logo_color_png.png"></div>
+            </div>
+        </div>
+    </div>
+    <div><!-- попап анкета-->
+
+        <a href="#x" class="overlay" id="zayavka" onclick=""></a>
+        <form onsubmit="" class="popup popup-zay div_padding_all_20">
+            <a class="close" title="Закрыть" href="#x"></a>
+            <div class="_font_color_void _fontsize_s_18 _font_semibold div_flex _flex_justify_center">
+                Заполните форму и наши менеджеры сделают вам расчет и перезвонят
+            </div>
+            <div class="div_flex div_flex_dir_row div_margin_top_xs _flex_justify_center">
+                <div class="form_margin_right">
+                    
+                    <div class="div_flex div_flex_dir_col_reverse">
+                        <input type="text" class="form_input _fontsize_xs_14 _font_color_void _font_normal div_margin_bottom_s_20" name="name">
+                        <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_void _font_normal">Введите ваше имя</div>
+                    </div>
+                    
+                    <div class="div_flex div_flex_dir_col_reverse">
+                        <input type="tel" class="form_input _fontsize_xs_14 _font_color_void _font_normal" name="phone">
+                        <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_void _font_normal">Введите ваш номер телефона</div>
+                    </div>
+                    <div class="button_margin_top_60">
+                        <input type="checkbox" class="form_checkbox form_checkbox2" name="check_agree1" id="check_agree1" value="yes">
+                        <label for="check_agree1" class="_fontsize_xs_14 _font_color_void _font_normal">
+                            Я согласен с условиями обработки<br>и исползования персональных данных
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="div_flex div_flex_dir_col_reverse">
+                        <input type="email" class="form_input _fontsize_xs_14 _font_color_void _font_normal" name="email">
+                        <div class="div_margin_bottom_s_20 _fontsize_xs_14 _font_color_void _font_normal">Введите ваш e mail</div>
+                    </div>
+                    <button type="button" onclick="importData()"  class="button_redblack div_flex _font_bold _fontsize_s button_margin_top_60" name="loadfile">
+                        <div class="button_rb_black"><img src="./img/arrow.svg" class="arrow_bot button_rb_arrow"></div>
+                        <div class="_fontsize_xs_14 _font_normal div_margin_auto _font_color_white">ПРИКРЕПИТЬ ФАЙЛЫ</div>
+                    </button>
+                    <button type="submit"  class="button_grey div_jevel _font_bold _fontsize_s button_margin_top_60" name="send_form">ПОЛУЧИТЬ РАССЧЕТ</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+<script type="text/javascript">
+function importData() {
+  let input = document.createElement('input');
+  input.type = 'file';
+  input.onchange = _ => {
+            let files =   Array.from(input.files);
+            console.log(files);
+        };
+  input.click();  
+}
+</script>
+</html>
